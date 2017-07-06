@@ -1,0 +1,24 @@
+Both of them are similar but not same.
+For easy understand, someone said mutex is one particular type of semaphore.
+In some cases, that is true, but that can not be truth always.
+Those two things have totally different perpose.
+
+[mutex]
+MUTual EXclusion is a property of concurrency control,
+    which is instituted for the purpose of preventing race conditions;
+    it is the requirement that one thread of execution never enter its critical section at the same time
+    that another concurrent thread of execution enters its own critical section.
+
+Mutex is used to protect shared resources(data, file, etc..).
+it give two APIs takeMutex and releaseMutex.
+
+[semaphore]
+Semaphore is variable or abstract data type used to control access to a common resource
+   by multiple processes in a concurrent system.
+It is a global valiable but unlike other global valiables.
+in OS level, atomic property should be guaranteed.
+
+There are three type of semaphore.
+ - counting semaphore
+ - binary semaphore
+ - mutual exclusive semaphore
